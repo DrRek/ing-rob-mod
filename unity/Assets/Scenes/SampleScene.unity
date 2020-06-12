@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 1805013890}
   - component: {fileID: 1805013891}
   m_Layer: 0
-  m_Name: New Linear Actuator
+  m_Name: Linear Actuator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
