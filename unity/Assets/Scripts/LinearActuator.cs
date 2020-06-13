@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class DraggablePoint : PropertyAttribute {}
+
 public class LinearActuator : MonoBehaviour
 {
     public GameObject staticPiston, movingPiston;
     public int stepsNumber = 100;
+
+    public GameObject topObject, attachPoint;
+    [DraggablePoint] public Vector3 attachPointPosition;
 
     private float min, max, stepSize;
     private Vector3 minForceForUpdateBug;
@@ -22,6 +27,24 @@ public class LinearActuator : MonoBehaviour
         movingRigidbody=movingPiston.GetComponent<Rigidbody>();
 
         minForceForUpdateBug = new Vector3(0f,-0.1f,0f);
+
+        /*var joints = topObject.GetComponents(typeof(ConfigurableJoint));
+        foreach (ConfigurableJoint joint in joints){
+        	Debug.Log(joint.connectedBody);
+        	/*if(joint.connectedBody == null){
+        		joint.connectedBody = attachPoint.GetComponent<Rigidbody>();
+        		joint.connectedAnchor = attachPointPosition;
+        	}*/
+        	
+        //}
+        ConfigurableJoint confJoin = topObject.AddComponent(typeof(ConfigurableJoint)) as ConfigurableJoint;
+        confJoin.connectedBody = attachPoint.GetComponent<Rigidbody>();
+        confJoin.autoConfigureConnectedAnchor = false;
+        confJoin.anchor = new Vector3(0f, -3f, 0f);
+        confJoin.connectedAnchor = attachPoint.transform.InverseTransformPoint(attachPointPosition);
+        confJoin.xMotion = ConfigurableJointMotion.Locked;
+        confJoin.yMotion = ConfigurableJointMotion.Locked;
+        confJoin.zMotion = ConfigurableJointMotion.Locked;
     }
 
     // Update is called once per frame
