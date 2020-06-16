@@ -18,7 +18,6 @@ public class Main : MonoBehaviour
     void Update(){
         float direction = Input.GetAxis("Vertical");
         if(direction > 0){
-            Debug.Log("vengo chiamtao");
             rearPistonScript.pistonExtend(1);
         } else if(direction < 0){
             rearPistonScript.pistonRetract(1);
