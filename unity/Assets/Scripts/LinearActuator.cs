@@ -17,26 +17,15 @@ public class LinearActuator : MonoBehaviour
     private ConfigurableJoint joint;
     private Rigidbody movingRigidbody;
 
-    // Start is called before the first frame update
-    void Start(){
-        min=-1f;
-        max=1f;
-        stepSize=(max-min)/stepsNumber;
+    private int currentStep;
 
+    void Start(){
         joint=movingPiston.GetComponent<ConfigurableJoint>();
         movingRigidbody=movingPiston.GetComponent<Rigidbody>();
 
         minForceForUpdateBug = new Vector3(0f,-0.1f,0f);
 
-        /*var joints = topObject.GetComponents(typeof(ConfigurableJoint));
-        foreach (ConfigurableJoint joint in joints){
-        	Debug.Log(joint.connectedBody);
-        	/*if(joint.connectedBody == null){
-        		joint.connectedBody = attachPoint.GetComponent<Rigidbody>();
-        		joint.connectedAnchor = attachPointPosition;
-        	}*/
-        	
-        //}
+        //Setup anchor to custom object
         ConfigurableJoint confJoin = topObject.AddComponent(typeof(ConfigurableJoint)) as ConfigurableJoint;
         confJoin.connectedBody = attachPoint.GetComponent<Rigidbody>();
         confJoin.autoConfigureConnectedAnchor = false;
@@ -45,33 +34,40 @@ public class LinearActuator : MonoBehaviour
         confJoin.xMotion = ConfigurableJointMotion.Locked;
         confJoin.yMotion = ConfigurableJointMotion.Locked;
         confJoin.zMotion = ConfigurableJointMotion.Locked;
-    }
 
-    // Update is called once per frame
-    void Update(){
-        float direction = Input.GetAxis("Vertical");
-        if(direction > 0){
-            pistonExtend(1);
-        } else if(direction < 0){
-            pistonRetract(1);
-        }
-    }
+        //Initialize costants used to calculate the steps
+        min=-1f;
+        max=1f;
+        stepSize=(max-min)/stepsNumber;
 
-    void pistonExtend(int multiplicator){
+        //Initialize current position to avoid some flickr
         Vector3 anchor = joint.connectedAnchor;
-        anchor.y = Mathf.Min(anchor.y+multiplicator*stepSize, max);
-        updateMovingAnchor(anchor);
+        //(anchor.y - min) : (max - min) = x : stepsNumber
+        currentStep =  Mathf.RoundToInt((anchor.y - min)*stepsNumber/(max - min));
+        updateAnchorStep();
     }
 
-    void pistonRetract(int multiplicator){
+    void updateAnchorStep(){
         Vector3 anchor = joint.connectedAnchor;
-        anchor.y = Mathf.Max(anchor.y-multiplicator*stepSize, min);
-        updateMovingAnchor(anchor);
-    }
+        anchor.y = min+currentStep*stepSize;
 
-    void updateMovingAnchor(Vector3 anchor){
+        //This is in order to update the anchor
         joint.connectedAnchor = anchor;
         movingRigidbody.AddForce(minForceForUpdateBug);
+    }
+
+    public void pistonExtend(int steps){
+        currentStep = Mathf.Min(currentStep + steps, stepsNumber);
+        updateAnchorStep();
+    }
+
+    public void pistonRetract(int steps){
+        currentStep = Mathf.Max(currentStep - steps, 0);
+        updateAnchorStep();   
+    }
+
+    public int getCurrentStep(){
+        return currentStep;
     }
 }
 
