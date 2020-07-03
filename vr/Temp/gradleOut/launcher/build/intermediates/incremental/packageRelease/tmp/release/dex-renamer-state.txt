@@ -1,0 +1,4 @@
+#Fri Jul 03 20:05:41 CEST 2020
+base.0=/home/luca/projects/robot/vr/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
