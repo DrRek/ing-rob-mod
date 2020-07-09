@@ -12499,6 +12499,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_m027A935E14EB81BCC0739BD56AE60CDE3387990C (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, int64_t ___ticks0, const RuntimeMethod* method);
 // System.DateTime System.DateTime::Parse(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  DateTime_Parse_mFB11F5C0061CEAD9A2F51E3814DEBE0475F2BA37 (String_t* ___s0, RuntimeObject* ___provider1, const RuntimeMethod* method);
+// System.String System.Int32::ToString(System.IFormatProvider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m1D0AF82BDAB5D4710527DD3FEFA6F01246D128A5 (int32_t* __this, RuntimeObject* ___provider0, const RuntimeMethod* method);
 // System.Int32 System.ParseNumbers::StringToInt(System.String,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParseNumbers_StringToInt_m4EB636CC7D3D970B1409CA4AA0336AB33B2DF39F (String_t* ___value0, int32_t ___fromBase1, int32_t ___flags2, const RuntimeMethod* method);
 // System.String System.Convert::ToBase64String(System.Byte[],System.Int32,System.Int32,System.Base64FormattingOptions)
@@ -40367,6 +40369,24 @@ IL_002f:
 	{
 		String_t* L_13 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
 		return L_13;
+	}
+}
+// System.String System.Convert::ToString(System.Char,System.IFormatProvider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Convert_ToString_m19979FD8FCD84DC6CFBF835D7666956E5138467B (Il2CppChar ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject* L_0 = ___provider1;
+		String_t* L_1 = Char_ToString_mF758476EBA0494508C18E74ADF20D7732A872BDE((Il2CppChar*)(&___value0), L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.String System.Convert::ToString(System.Int32,System.IFormatProvider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Convert_ToString_m013DD2590D9DCBA00A8A4FEEBE7FC2DBD4DDBC70 (int32_t ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject* L_0 = ___provider1;
+		String_t* L_1 = Int32_ToString_m1D0AF82BDAB5D4710527DD3FEFA6F01246D128A5((int32_t*)(&___value0), L_0, /*hidden argument*/NULL);
+		return L_1;
 	}
 }
 // System.Int32 System.Convert::ToInt32(System.String,System.Int32)

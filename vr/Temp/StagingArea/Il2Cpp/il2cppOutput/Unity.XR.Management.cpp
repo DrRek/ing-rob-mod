@@ -1651,7 +1651,7 @@ public:
 
 
 // System.Void System.Collections.Generic.List`1<System.Int32Enum>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mF1EB84A5CEE31BA24215DF4EC0E078108C96AFA2_gshared (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mDA58E61666905CF6A675FFC4ECC2D3E5261C47ED_gshared (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m2C7E51568033239B506E15E7804A0B8658246498_gshared (Dictionary_2_t32F25F093828AA9F93CB11C2A2B4648FD62A09BA * __this, const RuntimeMethod* method);
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
@@ -1663,7 +1663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m38B1099DDAD7EEDE2F4
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m94D0DAE031619503CDA6E53C5C3CC78AF3139472_gshared (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<System.Int32Enum>::get_Count()
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4054268BDB1765F6A2A46DA8BC862A12EFDA6610_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m6CF108FE58A5B62BAD55E3D1972B735084A7A587_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.List`1<System.Int32Enum>::Contains(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_mB20BB202C3BF33B7CC46960D75A1DF18B0FB7CA5_gshared (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, int32_t ___item0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
@@ -1718,7 +1718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_m6E2B3821A4A36155
 // System.Void System.Collections.Generic.List`1<UnityEngine.Rendering.GraphicsDeviceType>::.ctor()
 inline void List_1__ctor_mC5756FA907EE3707BD885587FC14B359C15123D6 (List_1_t98B286F3CEDF9291833FF42CB59E1BA513D70215 * __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t98B286F3CEDF9291833FF42CB59E1BA513D70215 *, const RuntimeMethod*))List_1__ctor_mF1EB84A5CEE31BA24215DF4EC0E078108C96AFA2_gshared)(__this, method);
+	((  void (*) (List_1_t98B286F3CEDF9291833FF42CB59E1BA513D70215 *, const RuntimeMethod*))List_1__ctor_mDA58E61666905CF6A675FFC4ECC2D3E5261C47ED_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<System.Type,UnityEngine.ISubsystem>::.ctor()
 inline void Dictionary_2__ctor_m539E66A075A2F9E56DA770A8BC0DCB46A59159EC (Dictionary_2_tC06ADAF88DFDFFDB3CD31E5BD4C77FBB46281E86 * __this, const RuntimeMethod* method)
@@ -1762,7 +1762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_get_graphicsDeviceType_m67
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.Rendering.GraphicsDeviceType>::get_Count()
 inline int32_t List_1_get_Count_mB5DE5A4DCB89191F467932CC702C74A56A906593_inline (List_1_t98B286F3CEDF9291833FF42CB59E1BA513D70215 * __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_t98B286F3CEDF9291833FF42CB59E1BA513D70215 *, const RuntimeMethod*))List_1_get_Count_m4054268BDB1765F6A2A46DA8BC862A12EFDA6610_gshared_inline)(__this, method);
+	return ((  int32_t (*) (List_1_t98B286F3CEDF9291833FF42CB59E1BA513D70215 *, const RuntimeMethod*))List_1_get_Count_m6CF108FE58A5B62BAD55E3D1972B735084A7A587_gshared_inline)(__this, method);
 }
 // System.Boolean System.Collections.Generic.List`1<UnityEngine.Rendering.GraphicsDeviceType>::Contains(!0)
 inline bool List_1_Contains_mCD0B4A0C4E044BF680A544C2CDA458D6DD811139 (List_1_t98B286F3CEDF9291833FF42CB59E1BA513D70215 * __this, int32_t ___item0, const RuntimeMethod* method)
@@ -3508,7 +3508,7 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current
 		return L_0;
 	}
 }
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4054268BDB1765F6A2A46DA8BC862A12EFDA6610_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m6CF108FE58A5B62BAD55E3D1972B735084A7A587_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = (int32_t)__this->get__size_2();

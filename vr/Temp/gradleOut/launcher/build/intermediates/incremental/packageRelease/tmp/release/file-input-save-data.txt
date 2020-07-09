@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jul 03 20:05:41 CEST 2020
+#Thu Jul 09 21:03:47 CEST 2020
 5.base=/home/luca/projects/robot/vr/Temp/gradleOut/launcher/build/intermediates/transforms/stripDebugSymbol/release/0
 22.path=bin/Data/Managed/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx
 32.set=ASSET

@@ -30,6 +30,21 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Subsystems();
 	RegisterModule_Subsystems();
 
+	void RegisterModule_TextRendering();
+	RegisterModule_TextRendering();
+
+	void RegisterModule_TLS();
+	RegisterModule_TLS();
+
+	void RegisterModule_UI();
+	RegisterModule_UI();
+
+	void RegisterModule_UnityWebRequest();
+	RegisterModule_UnityWebRequest();
+
+	void RegisterModule_Video();
+	RegisterModule_Video();
+
 	void RegisterModule_XR();
 	RegisterModule_XR();
 
@@ -62,7 +77,7 @@ class AudioLowPassFilter;
 class AudioReverbFilter; 
 class AudioReverbZone; 
 class Camera; template <> void RegisterUnityClass<Camera>(const char*);
-namespace UI { class Canvas; } 
+namespace UI { class Canvas; } template <> void RegisterUnityClass<UI::Canvas>(const char*);
 namespace UI { class CanvasGroup; } 
 namespace Unity { class Cloth; } 
 class Collider2D; 
@@ -122,12 +137,12 @@ class Skybox;
 class SortingGroup; 
 class StreamingController; 
 class Terrain; 
-class VideoPlayer; 
+class VideoPlayer; template <> void RegisterUnityClass<VideoPlayer>(const char*);
 class VisualEffect; 
 class WindZone; 
 namespace UI { class CanvasRenderer; } 
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
-class BoxCollider; 
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CapsuleCollider; 
 class CharacterController; 
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
@@ -181,7 +196,7 @@ class AvatarMask;
 class BillboardAsset; 
 class ComputeShader; template <> void RegisterUnityClass<ComputeShader>(const char*);
 class Flare; 
-namespace TextRendering { class Font; } 
+namespace TextRendering { class Font; } template <> void RegisterUnityClass<TextRendering::Font>(const char*);
 class LightProbes; 
 class LocalizationAsset; 
 class Material; template <> void RegisterUnityClass<Material>(const char*);
@@ -274,7 +289,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 59 non stripped classes
+	//Total: 63 non stripped classes
 	//0. AudioBehaviour
 	RegisterUnityClass<AudioBehaviour>("Audio");
 	//1. AudioClip
@@ -383,15 +398,23 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//53. Transform
 	RegisterUnityClass<Transform>("Core");
-	//54. Collider
+	//54. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//55. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//55. MeshCollider
+	//56. MeshCollider
 	RegisterUnityClass<MeshCollider>("Physics");
-	//56. PhysicsManager
+	//57. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//57. Rigidbody
+	//58. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//58. SphereCollider
+	//59. SphereCollider
 	RegisterUnityClass<SphereCollider>("Physics");
+	//60. TextRendering::Font
+	RegisterUnityClass<TextRendering::Font>("TextRendering");
+	//61. UI::Canvas
+	RegisterUnityClass<UI::Canvas>("UI");
+	//62. VideoPlayer
+	RegisterUnityClass<VideoPlayer>("Video");
 
 }

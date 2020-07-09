@@ -170,6 +170,7 @@ UnityEngine.Camera::get_farClipPlane
 UnityEngine.Camera::get_nearClipPlane
 UnityEngine.Camera::ScreenPointToRay_Injected
 UnityEngine.Camera::get_pixelRect_Injected
+UnityEngine.Camera::get_stereoActiveEye
 UnityEngine.Camera::get_clearFlags
 UnityEngine.Camera::get_targetTexture
 UnityEngine.CameraRaycastHelper::RaycastTry2D_Injected
@@ -221,6 +222,8 @@ UnityEngine.Material::CreateWithShader
 UnityEngine.Material::CreateWithString
 UnityEngine.Mathf::GammaToLinearSpace
 UnityEngine.Mesh::Internal_Create
+UnityEngine.Mesh::set_bounds_Injected
+UnityEngine.MeshFilter::get_mesh
 UnityEngine.MonoBehaviour::Internal_IsInvokingAll
 UnityEngine.MonoBehaviour::IsInvoking
 UnityEngine.MonoBehaviour::IsObjectMonoBehaviour
@@ -281,6 +284,7 @@ UnityEngine.Screen::set_brightness
 UnityEngine.Screen::set_sleepTimeout
 UnityEngine.ScriptableObject::CreateScriptableObject
 UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType
+UnityEngine.Shader::PropertyToID
 UnityEngine.SubsystemManager::DestroyInstance_Internal
 UnityEngine.SubsystemManager::ReportSingleSubsystemAnalytics
 UnityEngine.SubsystemManager::StaticConstructScriptingClassMap
@@ -302,6 +306,7 @@ UnityEngine.Transform::get_position_Injected
 UnityEngine.Transform::get_rotation_Injected
 UnityEngine.Transform::set_localPosition_Injected
 UnityEngine.Transform::set_localRotation_Injected
+UnityEngine.Transform::set_position_Injected
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::GetParent
 UnityEngine.U2D.SpriteAtlasManager::Register

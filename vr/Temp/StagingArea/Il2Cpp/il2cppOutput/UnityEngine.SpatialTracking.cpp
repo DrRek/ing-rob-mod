@@ -2046,9 +2046,9 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mDF2A9E665B7E
 // !0 System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriverDataDescription/PoseData>::get_Item(System.Int32)
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR PoseData_tF79A33767571168AAB333A85A6B6F0F9A8825DFE  List_1_get_Item_m1E6E0D1B07A6C361AAA41F852D577D6C99C1217E_gshared_inline (List_1_tD70953B84D0C29AB77B171E646D68A138A7B3DB3 * __this, int32_t ___index0, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1<System.Int32Enum>::get_Item(System.Int32)
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Item_m9BB539F70DC689475A08C8CA4DEA5C67C6FA5081_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, int32_t ___index0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Item_mCFD41F6E4658708CB4B57EC8A9F35DACFAED19DB_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, int32_t ___index0, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<System.Int32Enum>::get_Count()
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4054268BDB1765F6A2A46DA8BC862A12EFDA6610_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m6CF108FE58A5B62BAD55E3D1972B735084A7A587_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRuntimeObject_m129DEF8A66683189ED44B21496135824743EF617_gshared (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriverDataDescription/PoseData>::.ctor()
@@ -2058,9 +2058,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC832F1AC0F814BAEB19175F5D7
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_m6930161974C7504C80F52EC379EF012387D43138_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, RuntimeObject * ___item0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Int32Enum>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mF1EB84A5CEE31BA24215DF4EC0E078108C96AFA2_gshared (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mDA58E61666905CF6A675FFC4ECC2D3E5261C47ED_gshared (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Int32Enum>::Add(!0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_mFB9779D6E9E24CF97451BAF53421DDFF5A3A358F_gshared (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, int32_t ___item0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_m848B0A68E1AF949EA5CDDB579E8F69CE5DFB4631_gshared (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, int32_t ___item0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriverDataDescription/PoseData>::Add(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_mFDDBA9978652F353C9541B2E05D21B4F8FA9DB51_gshared (List_1_tD70953B84D0C29AB77B171E646D68A138A7B3DB3 * __this, PoseData_tF79A33767571168AAB333A85A6B6F0F9A8825DFE  ___item0, const RuntimeMethod* method);
 
@@ -2128,7 +2128,7 @@ inline PoseData_tF79A33767571168AAB333A85A6B6F0F9A8825DFE  List_1_get_Item_m1E6E
 // !0 System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriver/TrackedPose>::get_Item(System.Int32)
 inline int32_t List_1_get_Item_m60227EBEAF9298781EEDDAF59B6C014BA2271C5A_inline (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 * __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, int32_t, const RuntimeMethod*))List_1_get_Item_m9BB539F70DC689475A08C8CA4DEA5C67C6FA5081_gshared_inline)(__this, ___index0, method);
+	return ((  int32_t (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, int32_t, const RuntimeMethod*))List_1_get_Item_mCFD41F6E4658708CB4B57EC8A9F35DACFAED19DB_gshared_inline)(__this, ___index0, method);
 }
 // System.Void UnityEngine.SpatialTracking.TrackedPoseDriver::set_deviceType(UnityEngine.SpatialTracking.TrackedPoseDriver/DeviceType)
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void TrackedPoseDriver_set_deviceType_mAC196A187FD258AACC73FF262F4BF5438C3FEBCF_inline (TrackedPoseDriver_t7B9E8C9FDD60EB5023A757F4ED70AC92AA3C8C0A * __this, int32_t ___value0, const RuntimeMethod* method);
@@ -2137,7 +2137,7 @@ IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void TrackedPoseDriver_set_poseSource
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriver/TrackedPose>::get_Count()
 inline int32_t List_1_get_Count_m905F64D576CDFA491111C1CCE93BBEFC1EB82645_inline (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 * __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, const RuntimeMethod*))List_1_get_Count_m4054268BDB1765F6A2A46DA8BC862A12EFDA6610_gshared_inline)(__this, method);
+	return ((  int32_t (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, const RuntimeMethod*))List_1_get_Count_m6CF108FE58A5B62BAD55E3D1972B735084A7A587_gshared_inline)(__this, method);
 }
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1 (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * ___x0, Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * ___y1, const RuntimeMethod* method);
@@ -2196,12 +2196,12 @@ inline void List_1_Add_mA348FA1140766465189459D25B01EB179001DE83 (List_1_tE8032E
 // System.Void System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriver/TrackedPose>::.ctor()
 inline void List_1__ctor_m1548D3232C10BB1DD5A095120A460C414AC5DA2B (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 * __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, const RuntimeMethod*))List_1__ctor_mF1EB84A5CEE31BA24215DF4EC0E078108C96AFA2_gshared)(__this, method);
+	((  void (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, const RuntimeMethod*))List_1__ctor_mDA58E61666905CF6A675FFC4ECC2D3E5261C47ED_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriver/TrackedPose>::Add(!0)
 inline void List_1_Add_m2CA04400EC3EC535F1AF27DBA84392A4D20666B4 (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 * __this, int32_t ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, int32_t, const RuntimeMethod*))List_1_Add_mFB9779D6E9E24CF97451BAF53421DDFF5A3A358F_gshared)(__this, ___item0, method);
+	((  void (*) (List_1_t10B4421F82E8EBC91ADE783085927FD018F09A47 *, int32_t, const RuntimeMethod*))List_1_Add_m848B0A68E1AF949EA5CDDB579E8F69CE5DFB4631_gshared)(__this, ___item0, method);
 }
 // System.Void System.Collections.Generic.List`1<UnityEngine.SpatialTracking.TrackedPoseDriverDataDescription/PoseData>::Add(!0)
 inline void List_1_Add_mFDDBA9978652F353C9541B2E05D21B4F8FA9DB51 (List_1_tD70953B84D0C29AB77B171E646D68A138A7B3DB3 * __this, PoseData_tF79A33767571168AAB333A85A6B6F0F9A8825DFE  ___item0, const RuntimeMethod* method)
@@ -3696,7 +3696,7 @@ IL_000e:
 		return L_4;
 	}
 }
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Item_m9BB539F70DC689475A08C8CA4DEA5C67C6FA5081_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, int32_t ___index0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Item_mCFD41F6E4658708CB4B57EC8A9F35DACFAED19DB_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, int32_t ___index0, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = ___index0;
@@ -3718,7 +3718,7 @@ IL_000e:
 		return L_4;
 	}
 }
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4054268BDB1765F6A2A46DA8BC862A12EFDA6610_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m6CF108FE58A5B62BAD55E3D1972B735084A7A587_gshared_inline (List_1_t116A3B8CE581BED3D4552A7F22FE553557ADC4C5 * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = (int32_t)__this->get__size_2();

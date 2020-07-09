@@ -895,6 +895,7 @@ IL2CPP_EXTERN_C RuntimeClass* TimeType_t1E0366D2FDDE13B93F6DFD1A2FB8645B76E9DDA9
 IL2CPP_EXTERN_C RuntimeClass* TimeZoneInfo_t46EF9BAEAA787846F1A1EC419BE75CFEFAFF6777_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeZoneNotFoundException_t44EC55B0AAD26AD0E0B659D308CBF90E5C81B388_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeZone_tA2DF435DA1A379978B885F0872A93774666B7454_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Timeout_t148C37C092EAF5AFCE1D0C06481466A5F88E4C04_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimerCallback_tC89F2FB1294A86F64DEB2C1F68024954018AA219_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimerComparer_tC987818CFADF2F3ECEB89C0BD510600DAD816015_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Timer_t67FAB8E41573B4FA09CA56AE30725AF4297C2553_il2cpp_TypeInfo_var;
@@ -1629,6 +1630,7 @@ IL2CPP_EXTERN_C const uint32_t TimeZoneInfo_get_TimeZoneKey_m82B63E987CBDF47D663
 IL2CPP_EXTERN_C const uint32_t TimeZoneInfo_get_Utc_mE10DC8C042D2CE7D3FA9A46ED7035FF93B6502EE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TimeZoneInfo_readlink_m36675E5C86E478A8F522061E1AE5DD3F441F1413_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TimeZone__cctor_mF4FC3AB8D82A4A380D166F0F60CE193D51FA07D8_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Timeout__cctor_m9C4BFE11D3494ED5DB59176974B66055093F26D9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TimerComparer_Compare_mA323B05AE75107BF3D65BCFB43976A29155A4659_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Timer_Change_m0D893D7C243B79E85CDD8E06F366F0744F6637D6_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Timer_Dispose_mAD09E4EAC3D4A4732B55911919A60CACCF8173D9_MetadataUsageId;
@@ -10780,6 +10782,31 @@ public:
 	inline void set_m_foreignLock_4(SpinLock_t8C6A214261382587D0A07AD354500141672A1DE1  value)
 	{
 		___m_foreignLock_4 = value;
+	}
+};
+
+
+// System.Threading.Timeout
+struct  Timeout_t148C37C092EAF5AFCE1D0C06481466A5F88E4C04  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct Timeout_t148C37C092EAF5AFCE1D0C06481466A5F88E4C04_StaticFields
+{
+public:
+	// System.TimeSpan System.Threading.Timeout::InfiniteTimeSpan
+	TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___InfiniteTimeSpan_0;
+
+public:
+	inline static int32_t get_offset_of_InfiniteTimeSpan_0() { return static_cast<int32_t>(offsetof(Timeout_t148C37C092EAF5AFCE1D0C06481466A5F88E4C04_StaticFields, ___InfiniteTimeSpan_0)); }
+	inline TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  get_InfiniteTimeSpan_0() const { return ___InfiniteTimeSpan_0; }
+	inline TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 * get_address_of_InfiniteTimeSpan_0() { return &___InfiniteTimeSpan_0; }
+	inline void set_InfiniteTimeSpan_0(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  value)
+	{
+		___InfiniteTimeSpan_0 = value;
 	}
 };
 
@@ -32735,6 +32762,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThreadStateException__ctor_m977994CF05BB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Threading.Timeout::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timeout__cctor_m9C4BFE11D3494ED5DB59176974B66055093F26D9 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Timeout__cctor_m9C4BFE11D3494ED5DB59176974B66055093F26D9_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		TimeSpan__ctor_m310F37AF5F9F91433A98062BF6E4A248AA6C3DE5((&L_0), 0, 0, 0, 0, (-1), /*hidden argument*/NULL);
+		((Timeout_t148C37C092EAF5AFCE1D0C06481466A5F88E4C04_StaticFields*)il2cpp_codegen_static_fields_for(Timeout_t148C37C092EAF5AFCE1D0C06481466A5F88E4C04_il2cpp_TypeInfo_var))->set_InfiniteTimeSpan_0(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.UInt32 System.Threading.TimeoutHelper::GetTime()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t TimeoutHelper_GetTime_m6AD4BA5DCA9E4102DC18395A59123E91EB915D98 (const RuntimeMethod* method)
 {
@@ -37628,6 +37680,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeSpan_op_LessThan_mF92FF63DD1E5254097
 		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_2 = ___t21;
 		int64_t L_3 = L_2.get__ticks_3();
 		return (bool)((((int64_t)L_1) < ((int64_t)L_3))? 1 : 0);
+	}
+}
+// System.Boolean System.TimeSpan::op_LessThanOrEqual(System.TimeSpan,System.TimeSpan)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeSpan_op_LessThanOrEqual_mFFB6826BC19E5E63E62697EF3A81B84CD529E83B (TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___t10, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___t21, const RuntimeMethod* method)
+{
+	{
+		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_0 = ___t10;
+		int64_t L_1 = L_0.get__ticks_3();
+		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_2 = ___t21;
+		int64_t L_3 = L_2.get__ticks_3();
+		return (bool)((((int32_t)((((int64_t)L_1) > ((int64_t)L_3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 // System.Boolean System.TimeSpan::op_GreaterThan(System.TimeSpan,System.TimeSpan)

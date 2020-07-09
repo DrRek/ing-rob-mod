@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraPointer
     - CardboardStartup
+    - IndipendentCamera
+    - LargeMesh
     - ObjectController
     Google.XR.Cardboard.dll:
     - Google.XR.Cardboard.XRLoader
@@ -41,6 +43,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
@@ -48,13 +52,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 12234}
+      Script: {instanceID: 12054}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 12240}
+    - Class: 114
+      Script: {instanceID: 13032}
+    - Class: 114
+      Script: {instanceID: 23034}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -66,6 +74,8 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -200,6 +210,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: 50d7164703a8b58b0bd373a9a71a4af6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IndipendentCamera
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -566,6 +582,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LargeMesh
   platform: 13
   scenePathNames:
   - Assets/Samples/Google Cardboard XR Plugin for Unity/1.1.0/Hello Cardboard/Assets/Scenes/HelloCardboard.unity

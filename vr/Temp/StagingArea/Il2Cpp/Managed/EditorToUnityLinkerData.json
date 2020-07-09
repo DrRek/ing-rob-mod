@@ -333,6 +333,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "BoxCollider",
+            "fullManagedTypeName": "UnityEngine.BoxCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Samples/Google Cardboard XR Plugin for Unity/1.1.0/Hello Cardboard/Assets/Scenes/HelloCardboard.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "SphereCollider",
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
@@ -345,6 +354,15 @@
             "nativeClass": "RectTransform",
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Samples/Google Cardboard XR Plugin for Unity/1.1.0/Hello Cardboard/Assets/Scenes/HelloCardboard.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "VideoPlayer",
+            "fullManagedTypeName": "UnityEngine.Video.VideoPlayer",
+            "moduleName": "Video",
             "usedInScenes": [
                 "Assets/Samples/Google Cardboard XR Plugin for Unity/1.1.0/Hello Cardboard/Assets/Scenes/HelloCardboard.unity"
             ]
@@ -432,6 +450,20 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "CardboardStartup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "IndipendentCamera",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "LargeMesh",
             "moduleName": "",
             "usedInScenes": []
         },

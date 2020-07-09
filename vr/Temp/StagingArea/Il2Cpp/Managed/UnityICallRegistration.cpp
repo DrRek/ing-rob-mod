@@ -722,6 +722,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_get_pixelRect_Injected();
 		Register_UnityEngine_Camera_get_pixelRect_Injected();
 
+		//UnityEngine.Camera/MonoOrStereoscopicEye UnityEngine.Camera::get_stereoActiveEye()
+		void Register_UnityEngine_Camera_get_stereoActiveEye();
+		Register_UnityEngine_Camera_get_stereoActiveEye();
+
 		//UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags()
 		void Register_UnityEngine_Camera_get_clearFlags();
 		Register_UnityEngine_Camera_get_clearFlags();
@@ -1010,7 +1014,19 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Mesh_Internal_Create();
 		Register_UnityEngine_Mesh_Internal_Create();
 
+		//System.Void UnityEngine.Mesh::set_bounds_Injected(UnityEngine.Bounds&)
+		void Register_UnityEngine_Mesh_set_bounds_Injected();
+		Register_UnityEngine_Mesh_set_bounds_Injected();
+
 	//End Registrations for type : UnityEngine.Mesh
+
+	//Start Registrations for type : UnityEngine.MeshFilter
+
+		//UnityEngine.Mesh UnityEngine.MeshFilter::get_mesh()
+		void Register_UnityEngine_MeshFilter_get_mesh();
+		Register_UnityEngine_MeshFilter_get_mesh();
+
+	//End Registrations for type : UnityEngine.MeshFilter
 
 	//Start Registrations for type : UnityEngine.MonoBehaviour
 
@@ -1312,6 +1328,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.ScriptableObject
 
+	//Start Registrations for type : UnityEngine.Shader
+
+		//System.Int32 UnityEngine.Shader::PropertyToID(System.String)
+		void Register_UnityEngine_Shader_PropertyToID();
+		Register_UnityEngine_Shader_PropertyToID();
+
+	//End Registrations for type : UnityEngine.Shader
+
 	//Start Registrations for type : UnityEngine.SubsystemManager
 
 		//System.Void UnityEngine.SubsystemManager::DestroyInstance_Internal(System.IntPtr)
@@ -1425,6 +1449,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::set_localRotation_Injected(UnityEngine.Quaternion&)
 		void Register_UnityEngine_Transform_set_localRotation_Injected();
 		Register_UnityEngine_Transform_set_localRotation_Injected();
+
+		//System.Void UnityEngine.Transform::set_position_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_set_position_Injected();
+		Register_UnityEngine_Transform_set_position_Injected();
 
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();
