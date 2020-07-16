@@ -332,7 +332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761832026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14498246, y: -0.8169112, z: 5.2353697}
+  m_LocalPosition: {x: 0.14498246, y: -0.8169112, z: 2.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1120559197}
@@ -355,7 +355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &907292808
 Transform:
   m_ObjectHideFlags: 0
@@ -674,8 +674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0353f831f0711d8b4304a3dc58287a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  streamAddress: http://raspberrypi.local:8080/stream/video.mjpeg
-  showFps: 1
+  streamAddress: http://192.168.1.143:8080/stream/video.mjpeg
+  showFps: 0
   chunkSize: 1024
 --- !u!64 &1120559199
 MeshCollider:
@@ -753,7 +753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1146031073
 Transform:
   m_ObjectHideFlags: 0
@@ -762,7 +762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146031072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 637153151}
@@ -1517,6 +1517,7 @@ GameObject:
   - component: {fileID: 2144694082}
   - component: {fileID: 2144694081}
   - component: {fileID: 2144694080}
+  - component: {fileID: 2144694084}
   m_Layer: 0
   m_Name: Right Screen
   m_TagString: Untagged
@@ -1550,8 +1551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0353f831f0711d8b4304a3dc58287a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  streamAddress: http://raspberrypi.local:8080/stream/video.mjpeg
-  showFps: 1
+  streamAddress: http://192.168.1.143:8080/stream/video.mjpeg
+  showFps: 0
   chunkSize: 1024
 --- !u!64 &2144694081
 MeshCollider:
@@ -1614,3 +1615,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144694078}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2144694084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144694078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99eb47aa064333fe9eeebd074797508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

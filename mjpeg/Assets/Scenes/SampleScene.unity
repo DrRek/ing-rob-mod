@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   streamAddress: http://raspberrypi.local:8080/stream/video.mjpeg
-  showFps: 1
+  showFps: 0
   chunkSize: 1024
 --- !u!64 &949075044
 MeshCollider:
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   streamAddress: http://raspberrypi.local:8080/stream/video.mjpeg
-  showFps: 1
+  showFps: 0
   chunkSize: 1024
 --- !u!64 &1158405626
 MeshCollider:
